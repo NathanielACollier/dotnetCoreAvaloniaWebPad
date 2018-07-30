@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27703.2042
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnetCoreAvaloniaWebPad", "dotnetCoreAvaloniaWebPad\dotnetCoreAvaloniaWebPad.csproj", "{2D7EDCDC-0354-40ED-B96F-7935B1582093}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "testCEFBrowserControl", "testCEFBrowserControl\testCEFBrowserControl.csproj", "{BFD5E2F0-850B-4D2C-A1EF-8D64091C3EA4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{2D7EDCDC-0354-40ED-B96F-7935B1582093}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2D7EDCDC-0354-40ED-B96F-7935B1582093}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2D7EDCDC-0354-40ED-B96F-7935B1582093}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BFD5E2F0-850B-4D2C-A1EF-8D64091C3EA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BFD5E2F0-850B-4D2C-A1EF-8D64091C3EA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BFD5E2F0-850B-4D2C-A1EF-8D64091C3EA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BFD5E2F0-850B-4D2C-A1EF-8D64091C3EA4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
