@@ -1,7 +1,7 @@
 <UserControl xmlns="https://github.com/avaloniaui"
         xmlns:pages="clr-namespace:testCEFBrowserControl.views.pages;assembly=testCEFBrowserControl"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-    <StackPanel>
-        <TextBlock>Hello World!</TextBlock>
-    </StackPanel>
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:cef="clr-namespace:CefGlue.Avalonia;assembly=CefGlue.Avalonia"
+             >
+    <cef:AvaloniaCefBrowser StartUrl="http://www.google.com" />
 </UserControl>
