@@ -7,6 +7,8 @@ namespace testCEFBrowserControl.views{
 
         public Main(){
             AvaloniaXamlLoader.Load(this);
+
+            var browser = this.FindControl<CefGlue.Avalonia.AvaloniaCefBrowser>("browserCtrl");
         }
 
     }
