@@ -1,5 +1,6 @@
 ﻿using System;
 using Avalonia;
+using CefGlue.Avalonia;
 
 namespace testCEFBrowserControl
 {
@@ -9,6 +10,8 @@ namespace testCEFBrowserControl
         {
             AppBuilder.Configure<App>()
                 .UsePlatformDetect()
+                .UseSkia()
+                .ConfigureCefGlue(args)
                 .Start<MainWindow>();
         }
     }
