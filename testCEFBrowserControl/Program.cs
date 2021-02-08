@@ -1,6 +1,7 @@
 ﻿using System;
 using Avalonia;
-using CefGlue.Avalonia;
+using CefNet.CApi;
+using dotnetCoreAvaloniaNCForms;
 
 namespace testCEFBrowserControl
 {
@@ -8,11 +9,22 @@ namespace testCEFBrowserControl
     {
         static void Main(string[] args)
         {
-            AppBuilder.Configure<App>()
-                .UsePlatformDetect()
-                .UseSkia()
-                .ConfigureCefGlue(args)
-                .Start<MainWindow>();
+            var f = Avalonia.AppBuilder.Configure<dotnetCoreAvaloniaNCForms.App>()
+                .NewForm();
+
+            f.Text("Hello World!");
+            
+            // make a browser 
+            var browser = new CefNet.Avalonia.WebView();
+            browser.Initialized += (_sender, _args) =>
+            {
+                Console.WriteLine("Web View Initialized");
+                //browser.Navigate("https://www.google.com");
+            };
+            
+            f._Extend_AddRowToHost(browser, rowAutoHeight: false);
+            
+            f.Display();
         }
     }
 }

@@ -1,8 +1,0 @@
-<Window xmlns="https://github.com/avaloniaui"
-        xmlns:local="clr-namespace:testCEFBrowserControl;assembly=testCEFBrowserControl"
-        xmlns:views="clr-namespace:testCEFBrowserControl.views;assembly=testCEFBrowserControl"
-        MinWidth="500"
-        MinHeight="300"
-        Title="Avalonia test CEF Browser Control">
-    <views:Main />
-</Window>
