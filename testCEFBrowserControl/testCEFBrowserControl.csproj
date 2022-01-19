@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
 
@@ -13,8 +13,9 @@
 
   
   <ItemGroup>
-  <PackageReference Include="CefNet.Avalonia" Version="88.1.21022.1657" />
-  <PackageReference Include="dotnetCoreAvaloniaNCForms" Version="1.0.5" />
+  <PackageReference Include="CefNet.Avalonia" Version="97.1.22018.1433" />
+  <PackageReference Remove="Microsoft.NETCore.App" />
+  <PackageReference Include="nac.Forms" Version="1.3.12" />
   </ItemGroup>
 
 </Project>

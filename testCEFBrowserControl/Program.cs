@@ -1,7 +1,7 @@
 ﻿using System;
 using Avalonia;
 using CefNet.CApi;
-using dotnetCoreAvaloniaNCForms;
+using nac.Forms;
 
 namespace testCEFBrowserControl
 {
@@ -9,7 +9,7 @@ namespace testCEFBrowserControl
     {
         static void Main(string[] args)
         {
-            var f = Avalonia.AppBuilder.Configure<dotnetCoreAvaloniaNCForms.App>()
+            var f = Avalonia.AppBuilder.Configure<nac.Forms.App>()
                 .NewForm();
 
             f.Text("Hello World!");
