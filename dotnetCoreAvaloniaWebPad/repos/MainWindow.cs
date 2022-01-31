@@ -37,24 +37,24 @@ public static class MainWindow
                 {
                     _editorArea.VerticalGroup(_htmlEditorArea =>
                     {
-                        _htmlEditorArea.Text("HTML")
+                        _htmlEditorArea.Text("HTML", style: new nac.Forms.model.Style{height = 20})
                             .TextBoxFor(nameof(model.HTMLText));
                     }).VerticalGroup(_jsCSSEditorArea =>
                     {
                         _jsCSSEditorArea.VerticalGroup(_jsEditorArea =>
                         {
-                            _jsEditorArea.Text("Javascript")
+                            _jsEditorArea.Text("Javascript", style: new nac.Forms.model.Style{height = 20})
                                 .TextBoxFor(nameof(model.JavascriptText));
                         }).VerticalGroup(_cssEditorArea =>
                         {
-                            _cssEditorArea.Text("CSS")
+                            _cssEditorArea.Text("CSS", style: new nac.Forms.model.Style{height = 20})
                                 .TextBoxFor(nameof(model.CSSText));
                         });
                     });
                 }, isSplit: true)
                 .VerticalGroup(_browserVG =>
                 {
-                    _browserVG.Text("Result")
+                    _browserVG.Text("Result", style: new nac.Forms.model.Style{height = 20})
                         .Browser();
                 });
             }, isSplit:true)
