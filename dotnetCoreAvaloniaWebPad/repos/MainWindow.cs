@@ -39,7 +39,7 @@ public static class MainWindow
                     {
                         _htmlEditorArea.Text("HTML")
                             .TextBoxFor(nameof(model.HTMLText));
-                    }).HorizontalGroup(_jsCSSEditorArea =>
+                    }).VerticalGroup(_jsCSSEditorArea =>
                     {
                         _jsCSSEditorArea.VerticalGroup(_jsEditorArea =>
                         {
