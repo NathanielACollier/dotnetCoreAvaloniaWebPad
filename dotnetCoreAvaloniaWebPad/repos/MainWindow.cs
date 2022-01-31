@@ -50,8 +50,9 @@ public static class MainWindow
                             _cssEditorArea.Text("CSS")
                                 .TextBoxFor(nameof(model.CSSText));
                         });
-                    }, isSplit: true);
-                }).VerticalGroup(_browserVG =>
+                    });
+                }, isSplit: true)
+                .VerticalGroup(_browserVG =>
                 {
                     _browserVG.Text("Result")
                         .Browser();
